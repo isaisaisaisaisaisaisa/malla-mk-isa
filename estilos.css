@@ -1,1 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fdf6ff;
+  color: #4a305a;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #b57edc;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.mensaje {
+  font-size: 1.2em;
+  color: #8e44ad;
+  margin-bottom: 15px;
+}
+
+.progreso-container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.barra {
+  background-color: #e1ccec;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.relleno {
+  height: 100%;
+  width: 0%;
+  background-color: #d09aff;
+  transition: width 0.3s ease;
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+}
+
+.semestre {
+  min-width: 220px;
+  background-color: #fbefff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(170, 140, 200, 0.2);
+}
+
+.semestre h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #a66bbe;
+}
+
+.asignatura {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #f2e5ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.asignatura:hover {
+  background-color: #e8d2ff;
+}
+
+.asignatura.aprobada {
+  background-color: #d6c4f0;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.asignatura.bloqueada {
+  background-color: #f8e0ff;
+  color: #b39ac8;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #b090c6;
+}
 
